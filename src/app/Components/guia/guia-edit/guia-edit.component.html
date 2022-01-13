@@ -1,0 +1,46 @@
+<div class="row">
+  <h2>Crear Guia</h2>
+  <form [formGroup]="guiaForm" (ngSubmit)="editar()">
+    <div class="form-group">
+      <div class="col-md-6">
+        <input type="number" id="id" name="id" formControlName="id" required value=0 [(ngModel)]="form.id"
+          class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-6">
+        <label>Nombre</label>
+        <input type="text" id="nombre" name="nombre" formControlName="nombre" class="form-control"
+          [(ngModel)]="form.nombre">
+      </div>
+      <div class="col-md-6">
+        <label>Direccion</label>
+        <input type="text" id="direccion" name="direccion" formControlName="direccion" class="form-control" required
+          [(ngModel)]="form.direccion">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-6">
+        <label>Telefono</label>
+        <input type="number" id="telefono" name="telefono" formControlName="telefono" class="form-control" required
+          [(ngModel)]="form.telefono">
+      </div>
+      <div class="col-md-6">
+        <label>Fecha Ingreso</label>
+        <input type="date" id="fechaIngresoZoo" name="fechaIngresoZoo" formControlName="fechaIngresoZoo"
+          class="form-control" required [(ngModel)]="form.fechaIngresoZoo">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-6">
+        <label>Itinerario</label>
+        <select name="itinerario_id" id="itinerario_id" formControlName="itinerario_id" class="form-select" required
+          [(ngModel)]="form.itinerario_id">
+          <option [ngValue]="item.id" *ngFor="let item of itinerarios">{{item.id}}</option>
+        </select>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="guiaForm.invalid">Guardar</button>
+
+  </form>
+</div>

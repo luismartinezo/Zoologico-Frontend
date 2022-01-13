@@ -1,0 +1,32 @@
+
+<div class="table table-striped">
+  <h2>Guias Registrados</h2>
+  <button type="button" class="btn btn-primary" style="float: right;" routerLink="/addGuia">Agregar Guia</button>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>direccion</th>
+          <th>Telefono</th>
+          <th>Fecha Ingreso al Zoologico</th>
+          <th> Itinerario </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of guias">
+          <th>{{item.id}}</th>
+          <td>{{item.nombre}}</td>
+          <td>{{item.direccion}}</td>
+          <td>{{item.telefono}}</td>
+          <td>{{item.fechaIngresoZoo|date}}</td>
+          <td>{{item.itinerario_id}}</td>
+          <td>
+            <button type="button" class="btn btn-success" routerLink="/editGuia/{{item.id}}">Editar</button>&nbsp;
+            <button type="button" class="btn btn-danger" (click)="eliminar(item)">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
