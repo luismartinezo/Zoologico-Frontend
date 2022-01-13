@@ -1,27 +1,29 @@
 # Zoologico
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
+Este proyecto se generó con [Angular CLI](https://github.com/angular/angular-cli) versión 12.2.3.
 
-## Development server
+Interfaz Grafico Crud de Guias para Un Zoológico que necesita una aplicación informática para llevar una organización respecto a las especies que posee, los empleados (cuidadores y guías), y los distintos itinerarios de visita.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Servidor de desarrollo
 
-## Code scaffolding
+Ejecute `ng serve` para un servidor de desarrollo. Navegue a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambia alguno de los archivos de origen.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Andamiaje de código
 
-## Build
+Ejecute `ng generar componente nombre-componente` para generar un nuevo componente. También puede usar `ng generar directiva|tubería|servicio|clase|guardia|interfaz|enum|módulo`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Construir
 
-## Running unit tests
+Ejecute `ng build` para compilar el proyecto. Los artefactos de compilación se almacenarán en el directorio `dist/`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Ejecutando pruebas unitarias
 
-## Running end-to-end tests
+Ejecute `ng test` para ejecutar las pruebas unitarias a través de [Karma](https://karma-runner.github.io).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Ejecutar pruebas de extremo a extremo
 
-## Further help
+Ejecute `ng e2e` para ejecutar las pruebas de extremo a extremo a través de una plataforma de su elección. Para usar este comando, primero debe agregar un paquete que implemente capacidades de prueba de un extremo a otro.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Más ayuda
+
+Para obtener más ayuda sobre Angular CLI, use `ng help` o consulte la página [Descripción general y referencia de comandos de Angular CLI] (https://angular.io/cli).
